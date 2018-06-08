@@ -18,7 +18,7 @@ public class UrlController {
     @ResponseBody
     public String getURL(@RequestBody String json) {
         log.log(Level.INFO, "json text-->{0}",json);        
-       return "{ fulfillmentText: 'http://algunra-url-a-la-grafica' }";
+       return "{ fulfillmentText: 'https://graph-bot-graphservice.7e14.starter-us-west-2.openshiftapps.com/new-investor-graph' }";
     }
 
 }
