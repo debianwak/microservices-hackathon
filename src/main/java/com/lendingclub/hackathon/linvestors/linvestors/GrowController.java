@@ -15,11 +15,4 @@ public class GrowController {
 		log.log(Level.INFO, "returning new-investor-graph");   
         return "grow-result";
     }
-	
-	@RequestMapping(value = "/new-investor-graph-html")
-    public String getGraphHtml() {		
-		log.log(Level.INFO, "returning new-investor-graph-html");
-		
-        return "grow-result";
-    }
 }
