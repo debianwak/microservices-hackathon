@@ -20,6 +20,7 @@ public class UrlController {
 
        log.log(Level.INFO, "json text-->{0}",json);        
        String response = "\"message\": [{\"imageUrl\": \"https://www.africabusinessclassroom.com/wp-content/uploads/2015/07/investment-1.jpg\",\"platform\": \"google\",\"type\": 3}]";
-	   log.log(Level.INFO, "json text response-->{0}",response); 
+	   log.log(Level.INFO, "json text response-->{0}",response);
+	   return response;
     }
 }
