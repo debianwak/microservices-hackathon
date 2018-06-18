@@ -17,10 +17,9 @@ public class UrlController {
     @RequestMapping(value = "/url", method = RequestMethod.POST, produces = "application/json", consumes = "application/json")
     @ResponseBody
     public String getURL(@RequestBody String json) {
-       log.log(Level.INFO, "json text-->{0}",json);        
-       return "{\"conversationToken\":\"\",\"expectUserResponse\":true,\"expectedInputs\":[{\"inputPrompt\":{\"richInitialPrompt\":{\"items\":[{\"simpleResponse\":{\"textToSpeech\":\"Investment Graphic!\"}},{\"basicCard\":{"+
-	   "\"title\":\"Your Monthly Performance\",\"formattedText\":\"This is an example\",\"image\":{\"url\":\"https://www.africabusinessclassroom.com/wp-content/uploads/2015/07/investment-1.jpg\",\"accessibilityText\":\"Image alternate text\""+
-	   "},\"buttons\":[{\"title\":\"Read more\",\"openUrlAction\":{\"url\":\"https://graph-bot-graphservice.7e14.starter-us-west-2.openshiftapps.com/new-investor-graph\"}}],\"imageDisplayOptions\":\"CROPPED\"}}],\"suggestions\":[]}"+
-	   "},\"possibleIntents\":[{\"intent\":\"actions.intent.TEXT\"}]}]}";
+       log.log(Level.INFO, "json text-->{0}",json);  
+	   String response = "\"message\": [{\"imageUrl\": \"https://www.africabusinessclassroom.com/wp-content/uploads/2015/07/investment-1.jpg\",\"platform\": \"google\",\"type\": 3}]";
+	   log.log(Level.INFO, "json text response-->{0}",response); 
+       return response;
     }
 }
