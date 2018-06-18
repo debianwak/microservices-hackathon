@@ -8,10 +8,10 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
 public class GrowController {
-	private Logger log = Logger.getLogger("UrlController.class");
+	private Logger log = Logger.getLogger("GrowController.class");
 	
-	@RequestMapping("/new-investor-graph")
-    public String getURL() {		
+	@RequestMapping(value = "/new-investor-graph")
+    public String getGraph() {		
 		log.log(Level.INFO, "returning new-investor-graph");   
         return "grow-result";
     }
